@@ -2,11 +2,22 @@ package org.example;
 
 import java.util.Scanner;
 
+/**
+ * This class includes two methods: one for generating Fibonacci number at an nth term, and one for displaying it.
+ * @author: Quang Hoai Son Vu
+ *
+ */
 public class Main {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // get user's input
+        /**
+         * This main method will get a user's input,
+         * check if the input is valid,
+         * then call the function to generate the Fibonacci number
+         * at the term that is inputted.
+         */
         System.out.println("Enter the number of terms: ");
         int n = scanner.nextInt();
         if (n <= 0){
@@ -18,7 +29,10 @@ public class Main {
         }
     }
 
-    // program to calculate fibonacci sequence using recursion
+    /**
+     * This fibo function is used to find fibonacci number using recursion
+     * @return n
+      */
     private static int fibo(int n){
         if (n < 2){
             return n;
